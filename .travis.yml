@@ -12,5 +12,20 @@ before_install:
 script:
   - docker run -e CI=true mickey1102/docker-react npm run test -- --coverage
 
-after_success:
-  - echo "Test success DONNNNE"
+  #  AWS 배포
+  ## Use : elasticbeanstalk
+  ## bucketname -> S3
+  ## master branch로 push시 
+
+deploy:
+  provider: elasticbeanstalk
+  region: "ap-northeast-2"
+  app: "docker-react"
+  env: "Dockerreact-env"
+  bucket_name: "elasticbeanstalk-ap-northeast-2-436813218704"
+  bucket_path: "elasticbeanstalk-ap-northeast-2-436813218704"
+  on:
+    branch: master
+## AWS KEY는 Travis-CI에서 설정해놓음
+access_key_id: $AWS_ACCESS_KEY
+secret_access_key: $AWS_SECRET_ACCESS_KEY
