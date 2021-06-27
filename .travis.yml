@@ -27,5 +27,5 @@ deploy:
   on:
     branch: master
 ## AWS KEY는 Travis-CI에서 설정해놓음
-access_key_id: $AWS_ACCESS_KEY
-secret_access_key: $AWS_SECRET_ACCESS_KEY
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
