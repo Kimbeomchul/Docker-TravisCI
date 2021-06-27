@@ -1,4 +1,4 @@
-# 현황판
+# Docker-Travis CI-AWS 
 
 ### Used
 - React
@@ -21,3 +21,6 @@
 ### Docker
 - [설명](https://github.com/Kimbeomchul/TIL/tree/main/%EC%8A%AC%EA%B8%B0%EB%A1%9C%EC%9A%B4%20CI%20%ED%99%98%EA%B2%BD/Docker)
 
+### AWS
+- create elasticbeanstalk 
+- create IAM usr
